@@ -85,7 +85,7 @@ let editarDos = (propiedad) => {
         let textoInterior = lista[i].innerText;
         output = textoInterior.includes(selectedOption);
         if (output == true) {
-            alert('Esta Propiedad ya ha sido añadido. Favor de seleccionar uno diferente.');
+            alert('Esta Propiedad ya existe. Favor de seleccionar otra.');
             break;
         }
     }
