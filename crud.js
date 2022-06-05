@@ -102,3 +102,17 @@ let editarDos = (propiedad) => {
     }
     
 }
+
+// Botón eliminar
+let eliminar = (index) => {
+    lista = document.getElementsByTagName('tr');
+    for (i = 0; i < lista.length; i++) {
+        texto = String(lista[i].innerText);
+        output = texto.includes(index);
+        if (output == true) {
+            console.log(i);
+            document.getElementsByTagName('tr')[i].remove()
+            break;
+        }
+    }
+}
